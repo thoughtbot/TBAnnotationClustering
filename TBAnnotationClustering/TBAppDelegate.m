@@ -7,6 +7,7 @@
 //
 
 #import "TBAppDelegate.h"
+#import "TBMapViewController.h"
 
 @implementation TBAppDelegate
 
@@ -16,6 +17,10 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+
+    TBMapViewController *mapController = [[TBMapViewController alloc] init];
+    [self.window setRootViewController:mapController];
+
     return YES;
 }
 

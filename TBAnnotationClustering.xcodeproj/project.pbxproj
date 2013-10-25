@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E44063B617FF44A500E3A194 /* TBClusterAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = E44063B517FF44A500E3A194 /* TBClusterAnnotationView.m */; };
 		E47A6E8D17F62C0700A468D1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E47A6E8C17F62C0700A468D1 /* Foundation.framework */; };
 		E47A6E8F17F62C0700A468D1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E47A6E8E17F62C0700A468D1 /* CoreGraphics.framework */; };
 		E47A6E9117F62C0700A468D1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E47A6E9017F62C0700A468D1 /* UIKit.framework */; };
@@ -19,6 +20,13 @@
 		E47A6EA817F62C0700A468D1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E47A6E9017F62C0700A468D1 /* UIKit.framework */; };
 		E47A6EB017F62C0700A468D1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E47A6EAE17F62C0700A468D1 /* InfoPlist.strings */; };
 		E47A6EB217F62C0700A468D1 /* TBAnnotationClusteringTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E47A6EB117F62C0700A468D1 /* TBAnnotationClusteringTests.m */; };
+		E47A6EBC17F62C1000A468D1 /* USA-HotelMotel.csv in Resources */ = {isa = PBXBuildFile; fileRef = E47A6EBB17F62C1000A468D1 /* USA-HotelMotel.csv */; };
+		E480B06C1804F047006247FA /* TBClusterAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = E480B06B1804F047006247FA /* TBClusterAnnotation.m */; };
+		E4FB04C417F6302000FC288B /* TBQuadTree.m in Sources */ = {isa = PBXBuildFile; fileRef = E4FB04C317F6302000FC288B /* TBQuadTree.m */; };
+		E4FB04CD17F6320B00FC288B /* TBCoordinateQuadTree.m in Sources */ = {isa = PBXBuildFile; fileRef = E4FB04CC17F6320B00FC288B /* TBCoordinateQuadTree.m */; };
+		E4FB04CF17F6396700FC288B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4FB04CE17F6396700FC288B /* MapKit.framework */; };
+		E4FB04D217F6522700FC288B /* TBMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4FB04D117F6522700FC288B /* TBMapViewController.m */; };
+		E4FB04D417F654F500FC288B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4FB04D317F654F500FC288B /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E44063B417FF44A500E3A194 /* TBClusterAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBClusterAnnotationView.h; sourceTree = "<group>"; };
+		E44063B517FF44A500E3A194 /* TBClusterAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBClusterAnnotationView.m; sourceTree = "<group>"; };
 		E47A6E8917F62C0700A468D1 /* TBAnnotationClustering.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TBAnnotationClustering.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E47A6E8C17F62C0700A468D1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E47A6E8E17F62C0700A468D1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -48,6 +58,17 @@
 		E47A6EAD17F62C0700A468D1 /* TBAnnotationClusteringTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TBAnnotationClusteringTests-Info.plist"; sourceTree = "<group>"; };
 		E47A6EAF17F62C0700A468D1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E47A6EB117F62C0700A468D1 /* TBAnnotationClusteringTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TBAnnotationClusteringTests.m; sourceTree = "<group>"; };
+		E47A6EBB17F62C1000A468D1 /* USA-HotelMotel.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "USA-HotelMotel.csv"; sourceTree = "<group>"; };
+		E480B06A1804F047006247FA /* TBClusterAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBClusterAnnotation.h; sourceTree = "<group>"; };
+		E480B06B1804F047006247FA /* TBClusterAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBClusterAnnotation.m; sourceTree = "<group>"; };
+		E4FB04C217F6302000FC288B /* TBQuadTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBQuadTree.h; sourceTree = "<group>"; };
+		E4FB04C317F6302000FC288B /* TBQuadTree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBQuadTree.m; sourceTree = "<group>"; };
+		E4FB04CB17F6320B00FC288B /* TBCoordinateQuadTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBCoordinateQuadTree.h; sourceTree = "<group>"; };
+		E4FB04CC17F6320B00FC288B /* TBCoordinateQuadTree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBCoordinateQuadTree.m; sourceTree = "<group>"; };
+		E4FB04CE17F6396700FC288B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		E4FB04D017F6522700FC288B /* TBMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBMapViewController.h; sourceTree = "<group>"; };
+		E4FB04D117F6522700FC288B /* TBMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBMapViewController.m; sourceTree = "<group>"; };
+		E4FB04D317F654F500FC288B /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +76,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4FB04D417F654F500FC288B /* CoreLocation.framework in Frameworks */,
+				E4FB04CF17F6396700FC288B /* MapKit.framework in Frameworks */,
 				E47A6E8F17F62C0700A468D1 /* CoreGraphics.framework in Frameworks */,
 				E47A6E9117F62C0700A468D1 /* UIKit.framework in Frameworks */,
 				E47A6E8D17F62C0700A468D1 /* Foundation.framework in Frameworks */,
@@ -96,6 +119,8 @@
 		E47A6E8B17F62C0700A468D1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E4FB04D317F654F500FC288B /* CoreLocation.framework */,
+				E4FB04CE17F6396700FC288B /* MapKit.framework */,
 				E47A6E8C17F62C0700A468D1 /* Foundation.framework */,
 				E47A6E8E17F62C0700A468D1 /* CoreGraphics.framework */,
 				E47A6E9017F62C0700A468D1 /* UIKit.framework */,
@@ -109,6 +134,16 @@
 			children = (
 				E47A6E9B17F62C0700A468D1 /* TBAppDelegate.h */,
 				E47A6E9C17F62C0700A468D1 /* TBAppDelegate.m */,
+				E4FB04C217F6302000FC288B /* TBQuadTree.h */,
+				E4FB04C317F6302000FC288B /* TBQuadTree.m */,
+				E4FB04CB17F6320B00FC288B /* TBCoordinateQuadTree.h */,
+				E4FB04CC17F6320B00FC288B /* TBCoordinateQuadTree.m */,
+				E4FB04D017F6522700FC288B /* TBMapViewController.h */,
+				E4FB04D117F6522700FC288B /* TBMapViewController.m */,
+				E480B06A1804F047006247FA /* TBClusterAnnotation.h */,
+				E480B06B1804F047006247FA /* TBClusterAnnotation.m */,
+				E44063B417FF44A500E3A194 /* TBClusterAnnotationView.h */,
+				E44063B517FF44A500E3A194 /* TBClusterAnnotationView.m */,
 				E47A6E9E17F62C0700A468D1 /* Images.xcassets */,
 				E47A6E9317F62C0700A468D1 /* Supporting Files */,
 			);
@@ -118,6 +153,7 @@
 		E47A6E9317F62C0700A468D1 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E47A6EBB17F62C1000A468D1 /* USA-HotelMotel.csv */,
 				E47A6E9417F62C0700A468D1 /* TBAnnotationClustering-Info.plist */,
 				E47A6E9517F62C0700A468D1 /* InfoPlist.strings */,
 				E47A6E9817F62C0700A468D1 /* main.m */,
@@ -220,6 +256,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E47A6EBC17F62C1000A468D1 /* USA-HotelMotel.csv in Resources */,
 				E47A6E9717F62C0700A468D1 /* InfoPlist.strings in Resources */,
 				E47A6E9F17F62C0700A468D1 /* Images.xcassets in Resources */,
 			);
@@ -240,7 +277,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4FB04C417F6302000FC288B /* TBQuadTree.m in Sources */,
 				E47A6E9D17F62C0700A468D1 /* TBAppDelegate.m in Sources */,
+				E44063B617FF44A500E3A194 /* TBClusterAnnotationView.m in Sources */,
+				E480B06C1804F047006247FA /* TBClusterAnnotation.m in Sources */,
+				E4FB04D217F6522700FC288B /* TBMapViewController.m in Sources */,
+				E4FB04CD17F6320B00FC288B /* TBCoordinateQuadTree.m in Sources */,
 				E47A6E9917F62C0700A468D1 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -442,6 +484,7 @@
 				E47A6EB717F62C0700A468D1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E47A6EB817F62C0700A468D1 /* Build configuration list for PBXNativeTarget "TBAnnotationClusteringTests" */ = {
 			isa = XCConfigurationList;
@@ -450,6 +493,7 @@
 				E47A6EBA17F62C0700A468D1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
