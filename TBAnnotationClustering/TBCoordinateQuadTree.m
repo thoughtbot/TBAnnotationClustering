@@ -23,16 +23,16 @@ TBQuadTreeNodeData TBDataFromLine(NSString *line)
     TBHotelInfo* hotelInfo = malloc(sizeof(TBHotelInfo));
 
     const char *hotelName = [[components[2] stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] UTF8String];
-	size_t hotelNameLength = strlen(hotelName) + 1;
-	hotelInfo->hotelName = malloc(hotelNameLength);
-	memset(hotelInfo->hotelName, 0, hotelNameLength);
-	strncpy(hotelInfo->hotelName, hotelName, hotelNameLength);
+    size_t hotelNameLength = strlen(hotelName) + 1;
+    hotelInfo->hotelName = malloc(hotelNameLength);
+    memset(hotelInfo->hotelName, 0, hotelNameLength);
+    strncpy(hotelInfo->hotelName, hotelName, hotelNameLength);
     
-	const char *hotelPhoneNumber = [[[components lastObject] stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] UTF8String];
-	size_t hotelPhoneNumberLength = strlen(hotelPhoneNumber) + 1;
-	hotelInfo->hotelPhoneNumber = malloc(hotelPhoneNumberLength);
-	memset(hotelInfo->hotelPhoneNumber, 0, hotelPhoneNumberLength);
-	strncpy(hotelInfo->hotelPhoneNumber, hotelPhoneNumber, hotelPhoneNumberLength);
+    const char *hotelPhoneNumber = [[[components lastObject] stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] UTF8String];
+    size_t hotelPhoneNumberLength = strlen(hotelPhoneNumber) + 1;
+    hotelInfo->hotelPhoneNumber = malloc(hotelPhoneNumberLength);
+    memset(hotelInfo->hotelPhoneNumber, 0, hotelPhoneNumberLength);
+    strncpy(hotelInfo->hotelPhoneNumber, hotelPhoneNumber, hotelPhoneNumberLength);
 
     return TBQuadTreeNodeDataMake(latitude, longitude, hotelInfo);
 }
@@ -138,7 +138,7 @@ float TBCellSizeForZoomScale(MKZoomScale zoomScale)
 
                 TBHotelInfo hotelInfo = *(TBHotelInfo *)data.data;
                 [names addObject:[NSString stringWithFormat:@"%@", [NSString stringWithUTF8String:hotelInfo.hotelName]]];
-			    [phoneNumbers addObject:[NSString stringWithFormat:@"%@", [NSString stringWithUTF8String:hotelInfo.hotelPhoneNumber]]];
+                [phoneNumbers addObject:[NSString stringWithFormat:@"%@", [NSString stringWithUTF8String:hotelInfo.hotelPhoneNumber]]];
             });
 
             if (count == 1) {
