@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		257D9E1E1C36F5D7004B0025 /* USA-HotelMotel.csv in Resources */ = {isa = PBXBuildFile; fileRef = 257D9E1D1C36F5D7004B0025 /* USA-HotelMotel.csv */; };
 		E44063B617FF44A500E3A194 /* TBClusterAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = E44063B517FF44A500E3A194 /* TBClusterAnnotationView.m */; };
 		E47A6E8D17F62C0700A468D1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E47A6E8C17F62C0700A468D1 /* Foundation.framework */; };
 		E47A6E8F17F62C0700A468D1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E47A6E8E17F62C0700A468D1 /* CoreGraphics.framework */; };
@@ -18,9 +19,6 @@
 		E47A6EA617F62C0700A468D1 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E47A6EA517F62C0700A468D1 /* XCTest.framework */; };
 		E47A6EA717F62C0700A468D1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E47A6E8C17F62C0700A468D1 /* Foundation.framework */; };
 		E47A6EA817F62C0700A468D1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E47A6E9017F62C0700A468D1 /* UIKit.framework */; };
-		E47A6EB017F62C0700A468D1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E47A6EAE17F62C0700A468D1 /* InfoPlist.strings */; };
-		E47A6EB217F62C0700A468D1 /* TBAnnotationClusteringTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E47A6EB117F62C0700A468D1 /* TBAnnotationClusteringTests.m */; };
-		E47A6EBC17F62C1000A468D1 /* USA-HotelMotel.csv in Resources */ = {isa = PBXBuildFile; fileRef = E47A6EBB17F62C1000A468D1 /* USA-HotelMotel.csv */; };
 		E480B06C1804F047006247FA /* TBClusterAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = E480B06B1804F047006247FA /* TBClusterAnnotation.m */; };
 		E4FB04C417F6302000FC288B /* TBQuadTree.m in Sources */ = {isa = PBXBuildFile; fileRef = E4FB04C317F6302000FC288B /* TBQuadTree.m */; };
 		E4FB04CD17F6320B00FC288B /* TBCoordinateQuadTree.m in Sources */ = {isa = PBXBuildFile; fileRef = E4FB04CC17F6320B00FC288B /* TBCoordinateQuadTree.m */; };
@@ -40,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		257D9E1D1C36F5D7004B0025 /* USA-HotelMotel.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "USA-HotelMotel.csv"; sourceTree = SOURCE_ROOT; };
 		E44063B417FF44A500E3A194 /* TBClusterAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBClusterAnnotationView.h; sourceTree = "<group>"; };
 		E44063B517FF44A500E3A194 /* TBClusterAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBClusterAnnotationView.m; sourceTree = "<group>"; };
 		E47A6E8917F62C0700A468D1 /* TBAnnotationClustering.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TBAnnotationClustering.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -55,10 +54,6 @@
 		E47A6E9E17F62C0700A468D1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		E47A6EA417F62C0700A468D1 /* TBAnnotationClusteringTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TBAnnotationClusteringTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E47A6EA517F62C0700A468D1 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		E47A6EAD17F62C0700A468D1 /* TBAnnotationClusteringTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TBAnnotationClusteringTests-Info.plist"; sourceTree = "<group>"; };
-		E47A6EAF17F62C0700A468D1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		E47A6EB117F62C0700A468D1 /* TBAnnotationClusteringTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TBAnnotationClusteringTests.m; sourceTree = "<group>"; };
-		E47A6EBB17F62C1000A468D1 /* USA-HotelMotel.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "USA-HotelMotel.csv"; sourceTree = "<group>"; };
 		E480B06A1804F047006247FA /* TBClusterAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBClusterAnnotation.h; sourceTree = "<group>"; };
 		E480B06B1804F047006247FA /* TBClusterAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBClusterAnnotation.m; sourceTree = "<group>"; };
 		E4FB04C217F6302000FC288B /* TBQuadTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBQuadTree.h; sourceTree = "<group>"; };
@@ -101,7 +96,6 @@
 			isa = PBXGroup;
 			children = (
 				E47A6E9217F62C0700A468D1 /* TBAnnotationClustering */,
-				E47A6EAB17F62C0700A468D1 /* TBAnnotationClusteringTests */,
 				E47A6E8B17F62C0700A468D1 /* Frameworks */,
 				E47A6E8A17F62C0700A468D1 /* Products */,
 			);
@@ -153,29 +147,11 @@
 		E47A6E9317F62C0700A468D1 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				E47A6EBB17F62C1000A468D1 /* USA-HotelMotel.csv */,
+				257D9E1D1C36F5D7004B0025 /* USA-HotelMotel.csv */,
 				E47A6E9417F62C0700A468D1 /* TBAnnotationClustering-Info.plist */,
 				E47A6E9517F62C0700A468D1 /* InfoPlist.strings */,
 				E47A6E9817F62C0700A468D1 /* main.m */,
 				E47A6E9A17F62C0700A468D1 /* TBAnnotationClustering-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		E47A6EAB17F62C0700A468D1 /* TBAnnotationClusteringTests */ = {
-			isa = PBXGroup;
-			children = (
-				E47A6EB117F62C0700A468D1 /* TBAnnotationClusteringTests.m */,
-				E47A6EAC17F62C0700A468D1 /* Supporting Files */,
-			);
-			path = TBAnnotationClusteringTests;
-			sourceTree = "<group>";
-		};
-		E47A6EAC17F62C0700A468D1 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				E47A6EAD17F62C0700A468D1 /* TBAnnotationClusteringTests-Info.plist */,
-				E47A6EAE17F62C0700A468D1 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -225,7 +201,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = TB;
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "Theodore Calmes";
 				TargetAttributes = {
 					E47A6EA317F62C0700A468D1 = {
@@ -256,7 +232,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E47A6EBC17F62C1000A468D1 /* USA-HotelMotel.csv in Resources */,
+				257D9E1E1C36F5D7004B0025 /* USA-HotelMotel.csv in Resources */,
 				E47A6E9717F62C0700A468D1 /* InfoPlist.strings in Resources */,
 				E47A6E9F17F62C0700A468D1 /* Images.xcassets in Resources */,
 			);
@@ -266,7 +242,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E47A6EB017F62C0700A468D1 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,7 +266,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E47A6EB217F62C0700A468D1 /* TBAnnotationClusteringTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,14 +288,6 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		E47A6EAE17F62C0700A468D1 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E47A6EAF17F62C0700A468D1 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -329,7 +295,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -344,6 +309,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -368,7 +334,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -405,6 +370,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TBAnnotationClustering/TBAnnotationClustering-Prefix.pch";
 				INFOPLIST_FILE = "TBAnnotationClustering/TBAnnotationClustering-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "thoughtbot.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -418,6 +384,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TBAnnotationClustering/TBAnnotationClustering-Prefix.pch";
 				INFOPLIST_FILE = "TBAnnotationClustering/TBAnnotationClustering-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "thoughtbot.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -426,7 +393,6 @@
 		E47A6EB917F62C0700A468D1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TBAnnotationClustering.app/TBAnnotationClustering";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -449,7 +415,6 @@
 		E47A6EBA17F62C0700A468D1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TBAnnotationClustering.app/TBAnnotationClustering";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",

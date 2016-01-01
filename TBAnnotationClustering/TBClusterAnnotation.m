@@ -15,7 +15,7 @@
     self = [super init];
     if (self) {
         _coordinate = coordinate;
-        _title = [NSString stringWithFormat:@"%d hotels in this area", count];
+        _title = [NSString stringWithFormat:@"%ld hotels in this area", (long)count];
         _count = count;
     }
     return self;

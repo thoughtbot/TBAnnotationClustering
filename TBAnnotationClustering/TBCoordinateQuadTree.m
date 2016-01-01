@@ -101,7 +101,7 @@ float TBCellSizeForZoomScale(MKZoomScale zoomScale)
         }
 
         TBBoundingBox world = TBBoundingBoxMake(19, -166, 72, -53);
-        _root = TBQuadTreeBuildWithData(dataArray, count, world, 4);
+        _root = TBQuadTreeBuildWithData(dataArray, (int)count, world, 4);
     }
 }
 
