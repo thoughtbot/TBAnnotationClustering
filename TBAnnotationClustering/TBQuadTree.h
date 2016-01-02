@@ -18,6 +18,8 @@ TBQuadTreeNodeData TBQuadTreeNodeDataMake(double x, double y, void* data);
 typedef struct TBBoundingBox {
     double x0; double y0;
     double xf; double yf;
+    double centerX; double centerY;
+    double width; double height;
 } TBBoundingBox;
 TBBoundingBox TBBoundingBoxMake(double x0, double y0, double xf, double yf);
 

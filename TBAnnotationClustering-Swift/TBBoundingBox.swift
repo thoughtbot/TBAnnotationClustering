@@ -11,12 +11,22 @@ struct TBBoundingBox {
     let y0:Double
     let xf:Double
     let yf:Double
+
+    private let height:Double
+    private let width:Double
+    private let centerX:Double
+    private let centerY:Double
     
     init(x:Double, y:Double, xf:Double, yf:Double) {
         self.x0 = x
         self.y0 = y
         self.xf = xf
         self.yf = yf
+        
+        height = abs(yf - y0)
+        width = abs(xf - x0)
+        centerX = x0 + (width / 2)
+        centerY = y0 + (height / 2)
     }
     
     func containsData(data:TBQuadTreeNodeData) -> Bool {
@@ -27,6 +37,8 @@ struct TBBoundingBox {
     }
     
     func intersectWith(other:TBBoundingBox) -> Bool {
-        return x0 <= other.xf && xf >= other.x0 && y0 <= other.yf && yf >= other.y0
+        let intersectsX = abs(centerX - other.centerX) * 2 < (width + other.width)
+        let intersectsY = abs(centerY - other.centerY) * 2 < (height + other.height)
+        return intersectsX && intersectsY
     }
 }

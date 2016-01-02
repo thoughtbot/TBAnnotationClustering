@@ -16,7 +16,7 @@ class ViewController: UIViewController, MKMapViewDelegate {
     let TBAnnotatioViewReuseID = "TBAnnotatioViewReuseID"
 
     // DEFINE THE TREE'S BOUNDS:
-    let world = TBBoundingBox(x: 19, y: -166, xf: 72, yf:-53)// x: 90, y: 180, xf: -90, yf: -180)
+    let world = TBBoundingBox(x: -90, y: -180, xf: 90, yf: 180)
     
     let hotelTreeBuilder = TBHotelCSVTreeBuilder()
     var tbCoordinateQuadTree:TBCoordinateQuadTree?
