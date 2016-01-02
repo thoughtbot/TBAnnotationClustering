@@ -7,23 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2557EE9C1C3801B5001A8883 /* TBHotelInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2557EE9B1C3801B5001A8883 /* TBHotelInfo.swift */; };
+		2557EEA21C3801DC001A8883 /* TBBoundingBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2557EE9F1C3801DC001A8883 /* TBBoundingBox.swift */; };
+		2557EEA31C3801DC001A8883 /* TBQuadTreeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2557EEA01C3801DC001A8883 /* TBQuadTreeNode.swift */; };
+		2557EEA41C3801DC001A8883 /* TBQuadTreeNodeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2557EEA11C3801DC001A8883 /* TBQuadTreeNodeData.swift */; };
 		257D9E021C36DA57004B0025 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257D9E011C36DA57004B0025 /* AppDelegate.swift */; };
 		257D9E041C36DA57004B0025 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257D9E031C36DA57004B0025 /* ViewController.swift */; };
 		257D9E071C36DA57004B0025 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 257D9E051C36DA57004B0025 /* Main.storyboard */; };
 		257D9E091C36DA57004B0025 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 257D9E081C36DA57004B0025 /* Assets.xcassets */; };
 		257D9E0C1C36DA57004B0025 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 257D9E0A1C36DA57004B0025 /* LaunchScreen.storyboard */; };
-		257D9E151C36E095004B0025 /* TBQuadTreeNodeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257D9E141C36E095004B0025 /* TBQuadTreeNodeData.swift */; };
-		257D9E171C36E1FA004B0025 /* TBBoundingBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257D9E161C36E1FA004B0025 /* TBBoundingBox.swift */; };
-		257D9E191C36E3D4004B0025 /* TBQuadTreeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257D9E181C36E3D4004B0025 /* TBQuadTreeNode.swift */; };
 		257D9E1C1C36F59D004B0025 /* USA-HotelMotel.csv in Resources */ = {isa = PBXBuildFile; fileRef = 257D9E1B1C36F59D004B0025 /* USA-HotelMotel.csv */; };
 		257D9E211C36F72A004B0025 /* TBHotelCSVTreeBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257D9E201C36F72A004B0025 /* TBHotelCSVTreeBuilder.swift */; };
-		257D9E241C36F762004B0025 /* TBHotelInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257D9E231C36F762004B0025 /* TBHotelInfo.swift */; };
 		257D9E261C370377004B0025 /* TBCoordinateQuadTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257D9E251C370377004B0025 /* TBCoordinateQuadTree.swift */; };
 		257D9E281C371038004B0025 /* TBClusterAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257D9E271C371038004B0025 /* TBClusterAnnotation.swift */; };
 		257D9E2A1C371CD6004B0025 /* TBClusterAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257D9E291C371CD6004B0025 /* TBClusterAnnotationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2557EE9B1C3801B5001A8883 /* TBHotelInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TBHotelInfo.swift; path = "TBAnnotationClustering-Swift/TBHotelInfo.swift"; sourceTree = "<group>"; };
+		2557EE9F1C3801DC001A8883 /* TBBoundingBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TBBoundingBox.swift; path = "TBAnnotationClustering-Swift/TBBoundingBox.swift"; sourceTree = "<group>"; };
+		2557EEA01C3801DC001A8883 /* TBQuadTreeNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TBQuadTreeNode.swift; path = "TBAnnotationClustering-Swift/TBQuadTreeNode.swift"; sourceTree = "<group>"; };
+		2557EEA11C3801DC001A8883 /* TBQuadTreeNodeData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TBQuadTreeNodeData.swift; path = "TBAnnotationClustering-Swift/TBQuadTreeNodeData.swift"; sourceTree = "<group>"; };
 		257D9DFE1C36DA57004B0025 /* TBAnnotationClustering-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TBAnnotationClustering-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		257D9E011C36DA57004B0025 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		257D9E031C36DA57004B0025 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -31,12 +35,8 @@
 		257D9E081C36DA57004B0025 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "TBAnnotationClustering-Swift/Assets.xcassets"; sourceTree = "<group>"; };
 		257D9E0B1C36DA57004B0025 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		257D9E0D1C36DA57004B0025 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = "TBAnnotationClustering-Swift/Info.plist"; sourceTree = "<group>"; };
-		257D9E141C36E095004B0025 /* TBQuadTreeNodeData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBQuadTreeNodeData.swift; sourceTree = "<group>"; };
-		257D9E161C36E1FA004B0025 /* TBBoundingBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBBoundingBox.swift; sourceTree = "<group>"; };
-		257D9E181C36E3D4004B0025 /* TBQuadTreeNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBQuadTreeNode.swift; sourceTree = "<group>"; };
 		257D9E1B1C36F59D004B0025 /* USA-HotelMotel.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "USA-HotelMotel.csv"; sourceTree = "<group>"; };
 		257D9E201C36F72A004B0025 /* TBHotelCSVTreeBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TBHotelCSVTreeBuilder.swift; path = "TBAnnotationClustering-Swift/TBHotelCSVTreeBuilder.swift"; sourceTree = "<group>"; };
-		257D9E231C36F762004B0025 /* TBHotelInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBHotelInfo.swift; sourceTree = "<group>"; };
 		257D9E251C370377004B0025 /* TBCoordinateQuadTree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBCoordinateQuadTree.swift; sourceTree = "<group>"; };
 		257D9E271C371038004B0025 /* TBClusterAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBClusterAnnotation.swift; sourceTree = "<group>"; };
 		257D9E291C371CD6004B0025 /* TBClusterAnnotationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBClusterAnnotationView.swift; sourceTree = "<group>"; };
@@ -89,9 +89,9 @@
 		257D9E131C36E048004B0025 /* Data Structures */ = {
 			isa = PBXGroup;
 			children = (
-				257D9E141C36E095004B0025 /* TBQuadTreeNodeData.swift */,
-				257D9E161C36E1FA004B0025 /* TBBoundingBox.swift */,
-				257D9E181C36E3D4004B0025 /* TBQuadTreeNode.swift */,
+				2557EE9F1C3801DC001A8883 /* TBBoundingBox.swift */,
+				2557EEA01C3801DC001A8883 /* TBQuadTreeNode.swift */,
+				2557EEA11C3801DC001A8883 /* TBQuadTreeNodeData.swift */,
 			);
 			name = "Data Structures";
 			sourceTree = "<group>";
@@ -109,8 +109,8 @@
 		257D9E221C36F742004B0025 /* Hotel Data */ = {
 			isa = PBXGroup;
 			children = (
+				2557EE9B1C3801B5001A8883 /* TBHotelInfo.swift */,
 				257D9E201C36F72A004B0025 /* TBHotelCSVTreeBuilder.swift */,
-				257D9E231C36F762004B0025 /* TBHotelInfo.swift */,
 			);
 			name = "Hotel Data";
 			sourceTree = "<group>";
@@ -189,14 +189,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				257D9E211C36F72A004B0025 /* TBHotelCSVTreeBuilder.swift in Sources */,
-				257D9E191C36E3D4004B0025 /* TBQuadTreeNode.swift in Sources */,
 				257D9E2A1C371CD6004B0025 /* TBClusterAnnotationView.swift in Sources */,
-				257D9E241C36F762004B0025 /* TBHotelInfo.swift in Sources */,
 				257D9E041C36DA57004B0025 /* ViewController.swift in Sources */,
 				257D9E021C36DA57004B0025 /* AppDelegate.swift in Sources */,
+				2557EE9C1C3801B5001A8883 /* TBHotelInfo.swift in Sources */,
+				2557EEA31C3801DC001A8883 /* TBQuadTreeNode.swift in Sources */,
+				2557EEA21C3801DC001A8883 /* TBBoundingBox.swift in Sources */,
 				257D9E261C370377004B0025 /* TBCoordinateQuadTree.swift in Sources */,
-				257D9E151C36E095004B0025 /* TBQuadTreeNodeData.swift in Sources */,
-				257D9E171C36E1FA004B0025 /* TBBoundingBox.swift in Sources */,
+				2557EEA41C3801DC001A8883 /* TBQuadTreeNodeData.swift in Sources */,
 				257D9E281C371038004B0025 /* TBClusterAnnotation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

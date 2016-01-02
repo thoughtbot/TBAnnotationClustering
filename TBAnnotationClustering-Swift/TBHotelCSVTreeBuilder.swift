@@ -45,7 +45,7 @@ class TBHotelCSVTreeBuilder {
         var data = ""
         
         do {
-            data = try String(contentsOfFile: path, encoding: NSASCIIStringEncoding)
+            data = try String(contentsOfFile: path, encoding: NSUTF8StringEncoding)
         } catch {}
         
         return data

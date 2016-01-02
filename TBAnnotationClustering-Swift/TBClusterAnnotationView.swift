@@ -81,7 +81,10 @@ class TBClusterAnnotationView: MKAnnotationView {
         
         let outerCircleStrokeColor = UIColor(white: 0, alpha: 0.25)
         let innerCircleStrokeColor = UIColor.whiteColor()
-        let innerCircleFillColor = UIColor(red: (255.0 / 255.0), green: (95.0 / 255.0), blue: (42.0 / 255.0), alpha: 1.0)
+        var innerCircleFillColor = UIColor(red: (255.0 / 255.0), green: (95.0 / 255.0), blue: (42.0 / 255.0), alpha: 1.0)
+        if(count == 1) {
+            innerCircleFillColor = UIColor(red: (95.0 / 255.0), green: (150.0 / 255.0), blue: (42.0 / 255.0), alpha: 1.0)
+        }
         
         let circleFrame = CGRectInset(rect, 4, 4)
         
