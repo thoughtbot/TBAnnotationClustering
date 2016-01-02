@@ -33,6 +33,7 @@ class TBClusterAnnotationView: MKAnnotationView {
     }
     
     func TBScaledValueForValue(value:Float, multiplier:Float) -> Float {
+        // Multiplier * (1/e^(-Alpha * X^(Beta)))
         return multiplier * (1.0 / (1.0 + expf(-1 * TBScaleFactorAlpha * powf(value, TBScaleFactorBeta))))
     }
     
