@@ -19,6 +19,8 @@ TBQuadTreeNodeData TBQuadTreeNodeDataMake(double x, double y, void* data)
 TBBoundingBox TBBoundingBoxMake(double x0, double y0, double xf, double yf)
 {
     TBBoundingBox bb; bb.x0 = x0; bb.y0 = y0; bb.xf = xf; bb.yf = yf;
+    bb.width = fabs(xf - x0); bb.height = fabs(yf - y0);
+    bb.centerX = x0 + (bb.width / 2);  bb.centerY = x0 + (bb.height / 2);
     return bb;
 }
 
@@ -50,7 +52,9 @@ bool TBBoundingBoxContainsData(TBBoundingBox box, TBQuadTreeNodeData data)
 
 bool TBBoundingBoxIntersectsBoundingBox(TBBoundingBox b1, TBBoundingBox b2)
 {
-    return (b1.x0 <= b2.xf && b1.xf >= b2.x0 && b1.y0 <= b2.yf && b1.yf >= b2.y0);
+    bool intersectsX = fabs(b1.centerX - b2.centerX) * 2 < (b1.width + b2.width);
+    bool intersectsY = fabs(b1.centerY - b2.centerY) * 2 < (b1.height + b2.height);
+    return intersectsX && intersectsY;
 }
 
 #pragma mark - Quad Tree Functions

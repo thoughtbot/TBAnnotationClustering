@@ -1,0 +1,355 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2557EE9C1C3801B5001A8883 /* TBHotelInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2557EE9B1C3801B5001A8883 /* TBHotelInfo.swift */; };
+		2557EEA21C3801DC001A8883 /* TBBoundingBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2557EE9F1C3801DC001A8883 /* TBBoundingBox.swift */; };
+		2557EEA31C3801DC001A8883 /* TBQuadTreeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2557EEA01C3801DC001A8883 /* TBQuadTreeNode.swift */; };
+		2557EEA41C3801DC001A8883 /* TBQuadTreeNodeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2557EEA11C3801DC001A8883 /* TBQuadTreeNodeData.swift */; };
+		257D9E021C36DA57004B0025 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257D9E011C36DA57004B0025 /* AppDelegate.swift */; };
+		257D9E041C36DA57004B0025 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257D9E031C36DA57004B0025 /* ViewController.swift */; };
+		257D9E071C36DA57004B0025 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 257D9E051C36DA57004B0025 /* Main.storyboard */; };
+		257D9E091C36DA57004B0025 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 257D9E081C36DA57004B0025 /* Assets.xcassets */; };
+		257D9E0C1C36DA57004B0025 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 257D9E0A1C36DA57004B0025 /* LaunchScreen.storyboard */; };
+		257D9E1C1C36F59D004B0025 /* USA-HotelMotel.csv in Resources */ = {isa = PBXBuildFile; fileRef = 257D9E1B1C36F59D004B0025 /* USA-HotelMotel.csv */; };
+		257D9E211C36F72A004B0025 /* TBHotelCSVTreeBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257D9E201C36F72A004B0025 /* TBHotelCSVTreeBuilder.swift */; };
+		257D9E261C370377004B0025 /* TBCoordinateQuadTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257D9E251C370377004B0025 /* TBCoordinateQuadTree.swift */; };
+		257D9E281C371038004B0025 /* TBClusterAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257D9E271C371038004B0025 /* TBClusterAnnotation.swift */; };
+		257D9E2A1C371CD6004B0025 /* TBClusterAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257D9E291C371CD6004B0025 /* TBClusterAnnotationView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2557EE9B1C3801B5001A8883 /* TBHotelInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TBHotelInfo.swift; path = "TBAnnotationClustering-Swift/TBHotelInfo.swift"; sourceTree = "<group>"; };
+		2557EE9F1C3801DC001A8883 /* TBBoundingBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TBBoundingBox.swift; path = "TBAnnotationClustering-Swift/TBBoundingBox.swift"; sourceTree = "<group>"; };
+		2557EEA01C3801DC001A8883 /* TBQuadTreeNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TBQuadTreeNode.swift; path = "TBAnnotationClustering-Swift/TBQuadTreeNode.swift"; sourceTree = "<group>"; };
+		2557EEA11C3801DC001A8883 /* TBQuadTreeNodeData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TBQuadTreeNodeData.swift; path = "TBAnnotationClustering-Swift/TBQuadTreeNodeData.swift"; sourceTree = "<group>"; };
+		257D9DFE1C36DA57004B0025 /* TBAnnotationClustering-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TBAnnotationClustering-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		257D9E011C36DA57004B0025 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		257D9E031C36DA57004B0025 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		257D9E061C36DA57004B0025 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		257D9E081C36DA57004B0025 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "TBAnnotationClustering-Swift/Assets.xcassets"; sourceTree = "<group>"; };
+		257D9E0B1C36DA57004B0025 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		257D9E0D1C36DA57004B0025 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = "TBAnnotationClustering-Swift/Info.plist"; sourceTree = "<group>"; };
+		257D9E1B1C36F59D004B0025 /* USA-HotelMotel.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "USA-HotelMotel.csv"; sourceTree = "<group>"; };
+		257D9E201C36F72A004B0025 /* TBHotelCSVTreeBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TBHotelCSVTreeBuilder.swift; path = "TBAnnotationClustering-Swift/TBHotelCSVTreeBuilder.swift"; sourceTree = "<group>"; };
+		257D9E251C370377004B0025 /* TBCoordinateQuadTree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBCoordinateQuadTree.swift; sourceTree = "<group>"; };
+		257D9E271C371038004B0025 /* TBClusterAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBClusterAnnotation.swift; sourceTree = "<group>"; };
+		257D9E291C371CD6004B0025 /* TBClusterAnnotationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBClusterAnnotationView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		257D9DFB1C36DA57004B0025 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		257D9DF51C36DA57004B0025 = {
+			isa = PBXGroup;
+			children = (
+				257D9E1A1C36F56E004B0025 /* Supporting Files */,
+				257D9E131C36E048004B0025 /* Data Structures */,
+				257D9E221C36F742004B0025 /* Hotel Data */,
+				257D9E001C36DA57004B0025 /* TBAnnotationClustering-Swift */,
+				257D9DFF1C36DA57004B0025 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		257D9DFF1C36DA57004B0025 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				257D9DFE1C36DA57004B0025 /* TBAnnotationClustering-Swift.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		257D9E001C36DA57004B0025 /* TBAnnotationClustering-Swift */ = {
+			isa = PBXGroup;
+			children = (
+				257D9E011C36DA57004B0025 /* AppDelegate.swift */,
+				257D9E031C36DA57004B0025 /* ViewController.swift */,
+				257D9E251C370377004B0025 /* TBCoordinateQuadTree.swift */,
+				257D9E271C371038004B0025 /* TBClusterAnnotation.swift */,
+				257D9E291C371CD6004B0025 /* TBClusterAnnotationView.swift */,
+				257D9E051C36DA57004B0025 /* Main.storyboard */,
+				257D9E0A1C36DA57004B0025 /* LaunchScreen.storyboard */,
+			);
+			path = "TBAnnotationClustering-Swift";
+			sourceTree = "<group>";
+		};
+		257D9E131C36E048004B0025 /* Data Structures */ = {
+			isa = PBXGroup;
+			children = (
+				2557EE9F1C3801DC001A8883 /* TBBoundingBox.swift */,
+				2557EEA01C3801DC001A8883 /* TBQuadTreeNode.swift */,
+				2557EEA11C3801DC001A8883 /* TBQuadTreeNodeData.swift */,
+			);
+			name = "Data Structures";
+			sourceTree = "<group>";
+		};
+		257D9E1A1C36F56E004B0025 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				257D9E1B1C36F59D004B0025 /* USA-HotelMotel.csv */,
+				257D9E081C36DA57004B0025 /* Assets.xcassets */,
+				257D9E0D1C36DA57004B0025 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		257D9E221C36F742004B0025 /* Hotel Data */ = {
+			isa = PBXGroup;
+			children = (
+				2557EE9B1C3801B5001A8883 /* TBHotelInfo.swift */,
+				257D9E201C36F72A004B0025 /* TBHotelCSVTreeBuilder.swift */,
+			);
+			name = "Hotel Data";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		257D9DFD1C36DA57004B0025 /* TBAnnotationClustering-Swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 257D9E101C36DA57004B0025 /* Build configuration list for PBXNativeTarget "TBAnnotationClustering-Swift" */;
+			buildPhases = (
+				257D9DFA1C36DA57004B0025 /* Sources */,
+				257D9DFB1C36DA57004B0025 /* Frameworks */,
+				257D9DFC1C36DA57004B0025 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TBAnnotationClustering-Swift";
+			productName = "TBAnnotationClustering-Swift";
+			productReference = 257D9DFE1C36DA57004B0025 /* TBAnnotationClustering-Swift.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		257D9DF61C36DA57004B0025 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = eyaldar;
+				TargetAttributes = {
+					257D9DFD1C36DA57004B0025 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = CYF3A39EVW;
+					};
+				};
+			};
+			buildConfigurationList = 257D9DF91C36DA57004B0025 /* Build configuration list for PBXProject "TBAnnotationClustering-Swift" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 257D9DF51C36DA57004B0025;
+			productRefGroup = 257D9DFF1C36DA57004B0025 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				257D9DFD1C36DA57004B0025 /* TBAnnotationClustering-Swift */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		257D9DFC1C36DA57004B0025 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				257D9E0C1C36DA57004B0025 /* LaunchScreen.storyboard in Resources */,
+				257D9E091C36DA57004B0025 /* Assets.xcassets in Resources */,
+				257D9E071C36DA57004B0025 /* Main.storyboard in Resources */,
+				257D9E1C1C36F59D004B0025 /* USA-HotelMotel.csv in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		257D9DFA1C36DA57004B0025 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				257D9E211C36F72A004B0025 /* TBHotelCSVTreeBuilder.swift in Sources */,
+				257D9E2A1C371CD6004B0025 /* TBClusterAnnotationView.swift in Sources */,
+				257D9E041C36DA57004B0025 /* ViewController.swift in Sources */,
+				257D9E021C36DA57004B0025 /* AppDelegate.swift in Sources */,
+				2557EE9C1C3801B5001A8883 /* TBHotelInfo.swift in Sources */,
+				2557EEA31C3801DC001A8883 /* TBQuadTreeNode.swift in Sources */,
+				2557EEA21C3801DC001A8883 /* TBBoundingBox.swift in Sources */,
+				257D9E261C370377004B0025 /* TBCoordinateQuadTree.swift in Sources */,
+				2557EEA41C3801DC001A8883 /* TBQuadTreeNodeData.swift in Sources */,
+				257D9E281C371038004B0025 /* TBClusterAnnotation.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		257D9E051C36DA57004B0025 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				257D9E061C36DA57004B0025 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		257D9E0A1C36DA57004B0025 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				257D9E0B1C36DA57004B0025 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		257D9E0E1C36DA57004B0025 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		257D9E0F1C36DA57004B0025 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		257D9E111C36DA57004B0025 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "TBAnnotationClustering-Swift/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.eyaldar.TBAnnotationClustering-Swift";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		257D9E121C36DA57004B0025 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "TBAnnotationClustering-Swift/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.eyaldar.TBAnnotationClustering-Swift";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		257D9DF91C36DA57004B0025 /* Build configuration list for PBXProject "TBAnnotationClustering-Swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				257D9E0E1C36DA57004B0025 /* Debug */,
+				257D9E0F1C36DA57004B0025 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		257D9E101C36DA57004B0025 /* Build configuration list for PBXNativeTarget "TBAnnotationClustering-Swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				257D9E111C36DA57004B0025 /* Debug */,
+				257D9E121C36DA57004B0025 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 257D9DF61C36DA57004B0025 /* Project object */;
+}

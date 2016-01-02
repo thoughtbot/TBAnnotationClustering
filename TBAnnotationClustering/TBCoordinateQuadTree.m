@@ -90,7 +90,7 @@ float TBCellSizeForZoomScale(MKZoomScale zoomScale)
 - (void)buildTree
 {
     @autoreleasepool {
-        NSString *data = [NSString stringWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"USA-HotelMotel" ofType:@"csv"] encoding:NSASCIIStringEncoding error:nil];
+        NSString *data = [NSString stringWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"USA-HotelMotel" ofType:@"csv"] encoding:NSUTF8StringEncoding error:nil];
         NSArray *lines = [data componentsSeparatedByString:@"\n"];
 
         NSInteger count = lines.count - 1;
@@ -100,8 +100,8 @@ float TBCellSizeForZoomScale(MKZoomScale zoomScale)
             dataArray[i] = TBDataFromLine(lines[i]);
         }
 
-        TBBoundingBox world = TBBoundingBoxMake(19, -166, 72, -53);
-        _root = TBQuadTreeBuildWithData(dataArray, count, world, 4);
+        TBBoundingBox world = TBBoundingBoxMake(-90, -180, 90, 180);
+        _root = TBQuadTreeBuildWithData(dataArray, (int)count, world, 4);
     }
 }
 
