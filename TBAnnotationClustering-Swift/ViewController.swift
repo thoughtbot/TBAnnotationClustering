@@ -43,7 +43,7 @@ class ViewController: UIViewController, MKMapViewDelegate {
         let toRemove = NSMutableSet(set: before)
         toRemove.minusSet(after as Set<NSObject>)
         
-        NSOperationQueue().addOperationWithBlock() {
+        NSOperationQueue.mainQueue().addOperationWithBlock() {
             self.mapView.addAnnotations(toAdd.allObjects as! [MKAnnotation])
             self.mapView.removeAnnotations(toRemove.allObjects as! [MKAnnotation])
         }

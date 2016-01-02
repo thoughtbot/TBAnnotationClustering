@@ -50,11 +50,9 @@ class TBCoordinateQuadTree : NSObject {
                     totalX += data.x
                     totalY += data.y
                     
-                    let hotelInfo = data.data
-                    names.append(hotelInfo.name)
-                    
-                    if let phoneNum = hotelInfo.phoneNumber! {
-                        phoneNumbers.append(phoneNum)
+                    if let hotelInfo = data.data as? TBHotelInfo {
+                        names.append(hotelInfo.hotelName)
+                        phoneNumbers.append(hotelInfo.hotelPhoneNumber)
                     }
                 })
                 
@@ -66,7 +64,7 @@ class TBCoordinateQuadTree : NSObject {
                     clusteredAnnotations.append(annotation)
                 }
                 
-                if count > 1 {
+                if count == 1 {
                     let coordinate = CLLocationCoordinate2D(latitude: totalX, longitude: totalY)
                     let annotation = TBClusterAnnotation(coordinate: coordinate, count: count)
                     annotation.title = names.last!
@@ -92,10 +90,10 @@ class TBCoordinateQuadTree : NSObject {
         return TBBoundingBox(x: minLat, y: minLong, xf: maxLat, yf: maxLong)
     }
     
-    func TBZoomScaleToZoomLevel(scale:MKZoomScale) -> Double {
-        let totalTilesAtMaxZoom = MKMapSizeWorld.width / 256.0;
-        let zoomLevelAtMaxZoom = log2(totalTilesAtMaxZoom);
-        let zoomLevel = max(0, zoomLevelAtMaxZoom + floor(log2(Double(scale)) + 0.5));
+    func TBZoomScaleToZoomLevel(scale:MKZoomScale) -> Int {
+        let totalTilesAtMaxZoom = MKMapSizeWorld.width / 256.0
+        let zoomLevelAtMaxZoom = Int(log2(totalTilesAtMaxZoom))
+        let zoomLevel = Int(max(0, Double(zoomLevelAtMaxZoom) + floor(log2(Double(scale)) + 0.5)));
     
         return zoomLevel;
     }

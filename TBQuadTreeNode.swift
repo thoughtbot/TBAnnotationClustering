@@ -77,7 +77,7 @@ class TBQuadTreeNode {
     
     func gatherDataInRange(range: TBBoundingBox, action: (TBQuadTreeNodeData) -> Void) {
         // If range is not contained in the node's boundingBox then bail
-        if boundingBox.intersectWith(range) {
+        if !boundingBox.intersectWith(range) {
             return
         }
         

@@ -20,6 +20,10 @@ class TBClusterAnnotationView: MKAnnotationView {
         super.init(coder: aDecoder)
     }
     
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+    }
+    
     override init(annotation: MKAnnotation?, reuseIdentifier: String?) {
         super.init(annotation: annotation, reuseIdentifier: reuseIdentifier)
         
@@ -90,6 +94,6 @@ class TBClusterAnnotationView: MKAnnotationView {
         CGContextStrokeEllipseInRect(context, circleFrame)
         
         innerCircleFillColor.setFill()
-        CGContextStrokeEllipseInRect(context, circleFrame)
+        CGContextFillEllipseInRect(context, circleFrame)
     }
 }

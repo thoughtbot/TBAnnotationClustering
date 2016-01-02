@@ -27,7 +27,6 @@ struct TBBoundingBox {
     }
     
     func intersectWith(other:TBBoundingBox) -> Bool {
-        return (x0 <= other.xf && xf >= other.x0) &&
-                (y0 <= other.yf && yf >= other.y0)
+        return x0 <= other.xf && xf >= other.x0 && y0 <= other.yf && yf >= other.y0
     }
 }
