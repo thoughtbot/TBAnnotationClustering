@@ -13,5 +13,5 @@ or just install using cocoapods
 
 Swift Version
 --------------
-A try to migrate the Objective-C code to Swift, which so far failed miserably.
-This doesn't work yet - although all the code has been migrated, for some reason the gatherDataInRange method won't find anything.
+Added a Swift version of the code as an attempt at playing with Swift and figuring out Objective-C code.
+Note: this is not an exemplary Swift code, I'm still trying to figure out the best way past all this explict casting hell and might missed some memory management problems.
